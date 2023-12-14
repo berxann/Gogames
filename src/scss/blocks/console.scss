@@ -1,0 +1,144 @@
+@import "../stuff/variables";
+.console{
+  padding-top: 30px;
+  padding-bottom: 150px;
+  background: url("./img/images/bg2.svg") center center/cover no-repeat;
+  background-color: $bgColor;
+}
+.console-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.console-text{
+  margin-top: 85px;
+  width: 529px;
+  position: relative;
+  &__suptitle{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $firstColor;
+    margin-bottom: 31px;
+  }
+  &__title{
+    font-size: 63px;
+    font-weight: 600;
+    line-height: 75px;
+    color: $secondColor;
+    margin-bottom: 25px;
+    span{
+      font-weight: 500;
+    }
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    color: $thirdColor;
+    margin-bottom: 30px;
+  }
+  &__arrow{
+    position: absolute;
+    left: 426px;
+    top: 355px;
+  }
+}
+.console-image{
+  width: 633px;
+  position: relative;
+  &__bggamepad{
+    position: absolute;
+    right: 0;
+    top: -25px;
+  }
+  &__leaves{
+    position: absolute;
+    top: 50px;
+    left: 88px;
+  }
+  &__leaveslft{
+    position: absolute;
+    left: 119px;
+    top: 7px;
+    z-index: -1;
+  }
+  &__leavesrgt{
+    position: absolute;
+    top: 74px;
+    right: 49px;
+    z-index: -1;
+  }
+  &__gamepad{
+    position: absolute;
+    bottom: -11px;
+    right: 73px;
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  &__sixsml{
+    position: absolute;
+    right: 254px;
+    top: 102px;
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &__sixbig{
+    position: absolute;
+    top: 15px;
+    right: 134px;
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &__manbor{
+    position: absolute;
+    left: 87px;
+    top: 112px;
+    animation-name: updown2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  &__manyel{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+  &__dots{
+    position: absolute;
+    z-index: -1;
+    bottom: 92px;
+    right: -64px;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+@keyframes updown2 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}

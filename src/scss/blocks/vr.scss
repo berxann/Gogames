@@ -1,0 +1,101 @@
+@import "../stuff/variables";
+.vr{
+  padding-top: 160px;
+  padding-bottom: 92px;
+  background-color: $bgColor;
+}
+.vr-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.vr-image{
+  width: 556px;
+  position: relative;
+  &__telik{
+    display: block;
+    position: absolute;
+    right: 78px;
+    top: -60px;
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  &__human{
+    margin-top: 175px;
+    margin-left: 60px;
+  }
+  &__shadow{
+    position: absolute;
+    left: 65px;
+    bottom: 0;
+    z-index: -1;
+  }
+  &__mad{
+    bottom: 0;
+    position: absolute;
+    left: -32px;
+    z-index: -1;
+  }
+}
+
+.vr-text{
+  position: relative;
+  width: 590px;
+  &__suptitle{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $firstColor;
+    margin-bottom: 30px;
+  }
+  &__title{
+    font-size: 62px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    line-height: 75px;
+    color: $secondColor;
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    color: $thirdColor;
+    margin-bottom: 29px;
+    width: 518px;
+  }
+  &__arrow{
+    position: absolute;
+    left: 278px;
+    bottom: 205px;
+  }
+  &__vr{
+    font-family: "Roboto", sans-serif;
+    opacity: 5%;
+    position: relative;
+    font-size: 418px;
+    font-weight: 700;
+    line-height: 75px;
+    font-weight: 700;
+    z-index: -1;
+    color: rgba(236, 200, 178, 0.4);
+    -webkit-text-stroke: 8px #EB8382;
+
+  }
+  &__boypeek{
+    position: absolute;
+    right: -119px;
+    top: -374px;
+  }
+}
+
+@keyframes updown {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}

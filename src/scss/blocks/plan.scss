@@ -1,0 +1,83 @@
+@import "../stuff/variables";
+.plan{
+  padding-top: 48px;
+  padding-bottom: 73px;
+  background: $bgColor;
+  border-bottom: $thirdColor 1.5px solid;
+  &__suptitle{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: $firstColor;
+    margin-bottom: 23px;
+  }
+  &__title{
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+    color: $secondColor;
+    padding-bottom: 85px;
+  }
+}
+.plan-card-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.plan-card{
+  padding: 47px 36px 46px 47px;
+  width: 360px;
+  height: 566px;
+  border-radius: 20px;
+  background: #FBDACF;
+  box-shadow: 0 20px 50px 0 #8494CD14;
+  transition: .8s ease all;
+  &:hover{
+    transform: scale(1.1);
+    background: #446381;
+    .plan-card__title{
+      color: #FFFFFF;
+    }
+    .plan-card__list{
+      li{
+        color: #FFFFFF;
+      }
+    }
+  }
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $firstColor;
+    margin-bottom: 34px;
+  }
+  &__price{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    color: $secondColor;
+    margin-bottom: 35px;
+    span{
+      font-size: 18px;
+    }
+  }
+  &__list{
+    list-style: none;
+    margin-bottom: 46px;
+    li{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25px;
+      margin-bottom: 18px;
+      color: $thirdColor;
+      img{
+        margin-right: 14px;
+      }
+    }
+  }
+}
+.plan-btn{
+  width: 267px;
+}
+

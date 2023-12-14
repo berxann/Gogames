@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'NEXT ART_Bold.otf';
+  src: local('NEXT ART_Bold'), local('NEXT ART_Bold'),
+  url('NEXT ART_Bold.otf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'NEXT ART_Hevay.otf';
+  src: local('NEXT ART_Heavy'), local('NEXT ART_Heavy'),
+  url('NEXT ART_Heavy.otf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'NEXT ART';
+  src: local('NEXT ART Light'), local('NEXT ART Bold'),
+  url('NEXT ART_Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NEXT ART_Regular.otf';
+  src: local('NEXT ART_Regular'), local('NEXT ART_Bold'),
+  url('NEXT ART_Reagular.otf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NEXT ART_SemiBold.otf';
+  src: local('NEXT ART_SemiBold'), local('NEXT ART_Bold'),
+  url('NEXT ART_SemiBold.otf') format('truetype');
+  font-weight: 600;
+}

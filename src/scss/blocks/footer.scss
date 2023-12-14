@@ -1,0 +1,29 @@
+@import "../stuff/variables";
+.footer{
+  padding-top: 25px;
+  padding-bottom: 19px;
+  background: $bgColor;
+  &__icons{
+    display: flex;
+  }
+  &__icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FCD8CB;
+    box-shadow: -1px -1px 8px 0px #FFFFFF14;
+    margin-right: 18px;
+    img{
+      transform: translate(50%, 50%);
+    }
+
+  }
+}
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fb{
+  transform: translate(100%, 50%);
+}
